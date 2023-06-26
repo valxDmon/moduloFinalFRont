@@ -87,3 +87,6 @@ h3 {
   background-color: #512da8;
   cursor: pointer;
 }
+select {
+  display: flex !important;
+}
