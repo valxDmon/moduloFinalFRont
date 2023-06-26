@@ -1,4 +1,4 @@
-const url = 'http://localhost:8282/api/venta'
+const url = 'https://modulofinalff.onrender.com/listarVentas.html'
 const listarVenta = async () => {
     let body = document.getElementById('contenido');
     if (body) {
