@@ -1,0 +1,89 @@
+/* Estilos para la navegación */
+
+/* Estilos para el título de la página */
+h3 {
+  color: #673ab7;
+}
+
+/* Estilos para la tabla de servicios */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para el botón de registrar servicio */
+#crear {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#crear a {
+  color: white;
+  text-decoration: none;
+
+}
+
+#crear:hover {
+  background-color: #512da8;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de edición de servicio */
+.card {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  color: #673ab7;
+  margin-bottom: 5px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="number"],
+.input-field input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.input-field input[type="text"]:focus,
+.input-field input[type="number"]:focus,
+.input-field input[type="date"]:focus {
+  outline: none;
+  border-color: #673ab7;
+}
+
+#btnEditar {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#btnEditar:hover {
+  background-color: #512da8;
+  cursor: pointer;
+}

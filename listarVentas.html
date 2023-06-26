@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ventas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/listar1.css">
+    </head>
+
+    <body id="body">
+      
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listarVentas.html">Ventas</a></li>
+                <li><a href="listarEventos.html">Eventos</a></li>
+                <li><a href="listarServicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h3>Ventas</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Clientes</th>
+                        <th>Categoria</th>
+                        <th>Fecha de Ejecución</th>
+                        <th>Precio</th>
+                        <th>acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido">
+
+                </tbody>
+            </table>
+            <br><br><br>
+            <button id="crear" class="btn btn-outline-primary"><a href="registrarVentas.html"
+                    style="color: white; text-decoration: none;">Registrar venta</a></button>
+        </div>
+        <!-- Modal Trigger -->
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-small">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="card p-4">
+                        <h3 class="text-center">Editar Venta</h3>
+                        <form id="formEditar">
+                            <input type="hidden" id="_id">
+
+                            <div class="input-field">
+                                <input id="_id" type="hidden" class="validate">
+                                <label for="nombre_cliente">nombre_cliente</label>
+                                <input type="text" id="nombre_cliente" placeholder="nombre cliente" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="categoria">categoria</label>
+                                <input type="text" id="categoria" placeholder="categoria" required>
+                            </div>
+                               <div class="input-field">
+                                <label for="fecha_ejecucion">fecha_ejecucion</label>
+                                <input type="date" id="fecha_ejecucion" step="any" placeholder="fecha_ejecucion" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="precio">precio</label>
+                                <input type="number" id="precio" placeholder="precio" step="any" required>
+                            </div>
+
+                            <div class="text-center">
+                                <button id="btnEditar" class="btn btn-outline-primary">Editar venta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });
+
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <script src="funciones.js"></script>
+       
+    </body>
+
+    </html>
