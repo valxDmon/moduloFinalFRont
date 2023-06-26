@@ -121,6 +121,41 @@ const actualizarVenta = async () => {
         precio: precio
 
     };
+     const expNombres = /^[a-zA-ZÀ-ÖØ-öø-ÿ\s'-]+$/;
+    const expCategorias = /^[a-zA-ZÀ-ÖØ-öø-ÿ\s'-]+$/;
+    const expPrecio = /^[0-9]+$/;
+
+    if (nombre_cliente === '' || categoria === '' || precio === '' || fecha_ejecucion === '') {
+        alert('Todos los campos son obligatorios')
+        return
+    }
+
+    if (!expNombres.test(nombre_cliente)) {
+         window.alert ('Nombres incorrectos. ¡Solo se permiten letras!')
+        return
+    }
+
+    if (!expCategorias.test(categoria)) {
+        alert ('categorias incorrectos. ¡Solo se permiten letras ')
+        return
+    }
+
+    if(new Date(fecha_ejecucion) < new Date()){
+        alert ('fecha incorrecta')
+        return
+    }
+
+    if(precio <=0){
+        alert('numero menor a 0 error')
+        return
+    }
+
+    if (!expPrecio.test(precio) ) {
+        alert ('precio incorrecto. ¡Solo se permiten numeros! ' )
+        return
+
+    
+ }
 
 
     if (nombre_cliente) {
