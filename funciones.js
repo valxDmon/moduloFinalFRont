@@ -176,7 +176,7 @@ if (document.querySelector('#editar')) {
 }
 document.addEventListener('DOMContentLoaded', function () {
     const editarButton = document.querySelector('#btnEditar');
-    document.querySelector('#formEditar').addEventListener('submit', e => e.preventDefault());
+    document.querySelector('#formEditar')?.addEventListener('submit', e => e.preventDefault());
 
     if (editarButton) {
         editarButton.addEventListener('click', actualizarVenta);
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const registrarButton = document.querySelector('#btnRegistrar');
-    document.querySelector('#formRegistrar').addEventListener('submit', e => e.preventDefault());
+    document.querySelector('#formRegistrar')?.addEventListener('submit', e => e.preventDefault());
 
     if (registrarButton) {
         registrarButton.addEventListener('click', registrarVenta);
