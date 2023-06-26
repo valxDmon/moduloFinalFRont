@@ -7,6 +7,7 @@ const listarVenta = async () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 const ventas = data.venta;
                 ventas.map((venta) => {
                     const fecha_test = new Date(venta.fecha_ejecucion)
