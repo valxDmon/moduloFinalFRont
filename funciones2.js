@@ -1,4 +1,4 @@
-const url = 'http://localhost:8282/api/evento'
+const url = 'https://modulofinalff.onrender.com/listarEventos.html'
 const listarEvento = async () => {
     let body = document.getElementById('contenido');
     if (body) {
