@@ -1,4 +1,4 @@
-const url = 'https://modulofinalff.onrender.com/listarEventos.html'
+const url = 'https://modulofinalbb.onrender.com/api/evento'
 const listarEvento = async () => {
     let body = document.getElementById('contenido');
     if (body) {
