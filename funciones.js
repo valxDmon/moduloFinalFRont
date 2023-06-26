@@ -1,4 +1,4 @@
-const url = 'https://modulofinalff.onrender.com/listarVentas.html'
+const url = 'https://modulofinalbb.onrender.com/api/venta'
 const listarVenta = async () => {
     let body = document.getElementById('contenido');
     if (body) {
